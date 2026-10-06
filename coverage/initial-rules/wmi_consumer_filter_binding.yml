@@ -1,0 +1,23 @@
+title: WMI Permanent Event Consumer Filter Binding
+id: caa854aa-f9a0-4873-a474-94a5c2417f44
+status: experimental
+description: Detects a Sysmon WMI consumer-to-filter binding event, an observable component of permanent WMI event subscriptions. Legitimate monitoring can use the same mechanism.
+references:
+  - https://attack.mitre.org/techniques/T1546/003/
+  - https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon
+author: Samuel Yoder
+date: 2026-10-05
+tags:
+  - attack.persistence
+  - attack.privilege-escalation
+  - attack.t1546.003
+logsource:
+  product: windows
+  category: wmi_event
+detection:
+  selection:
+    EventID: 21
+  condition: selection
+falsepositives:
+  - Legitimate WMI event subscriptions used by monitoring and management software
+level: medium

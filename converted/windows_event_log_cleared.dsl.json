@@ -1,0 +1,51 @@
+{
+  "bool": {
+    "should": [
+      {
+        "bool": {
+          "filter": [
+            {
+              "wildcard": {
+                "winlog.channel": {
+                  "value": "Security",
+                  "case_insensitive": true
+                }
+              }
+            },
+            {
+              "wildcard": {
+                "event.code": {
+                  "value": "1102",
+                  "case_insensitive": true
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "bool": {
+          "filter": [
+            {
+              "wildcard": {
+                "winlog.channel": {
+                  "value": "System",
+                  "case_insensitive": true
+                }
+              }
+            },
+            {
+              "wildcard": {
+                "event.code": {
+                  "value": "104",
+                  "case_insensitive": true
+                }
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "minimum_should_match": 1
+  }
+}

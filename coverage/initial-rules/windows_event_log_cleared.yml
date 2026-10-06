@@ -1,0 +1,24 @@
+title: Windows Security or System Event Log Clearing
+id: 5dc36677-0fa7-459e-809b-566190f33b61
+status: experimental
+description: Detects Security event 1102 or System event 104 as log-clearing indicators. Clearing logs can be authorized; System 104 may report clearing of another event channel.
+references:
+  - https://attack.mitre.org/techniques/T1685/005/
+author: Samuel Yoder
+date: 2026-10-05
+tags:
+  - attack.defense-impairment
+  - attack.t1685.005
+logsource:
+  product: windows
+detection:
+  selection_security:
+    Channel: Security
+    EventID: 1102
+  selection_system:
+    Channel: System
+    EventID: 104
+  condition: selection_security or selection_system
+falsepositives:
+  - Authorized troubleshooting, maintenance, and administrators clearing logs
+level: medium

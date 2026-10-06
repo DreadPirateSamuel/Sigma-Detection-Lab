@@ -1,0 +1,1 @@
+any where winlog.channel:"Microsoft-Windows-Sysmon/Operational" and ((event.code:"1" and (process.executable like~ ("*\\powershell.exe", "*\\pwsh.exe"))) and (process.command_line like~ ("* -e *", "* -ec *", "* -en *", "* -enc *", "* -enco *", "* -encodedcommand *")))

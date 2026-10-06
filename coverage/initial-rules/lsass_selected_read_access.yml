@@ -1,0 +1,31 @@
+title: LSASS Access With Selected Memory Read Access Masks
+id: 70270591-fbdc-4c88-8f82-217b1ad0d44e
+status: experimental
+description: Detects Sysmon process access to LSASS using selected access masks that include PROCESS_VM_READ. This is an access indicator and does not prove that credentials were dumped.
+references:
+  - https://attack.mitre.org/techniques/T1003/001/
+  - https://learn.microsoft.com/en-us/windows/win32/procthread/process-security-and-access-rights
+author: Samuel Yoder
+date: 2026-10-05
+tags:
+  - attack.credential-access
+  - attack.t1003.001
+logsource:
+  product: windows
+  category: process_access
+detection:
+  selection:
+    EventID: 10
+    TargetImage|endswith: '\lsass.exe'
+    GrantedAccess:
+      - '0x1010'
+      - '0x1410'
+      - '0x1438'
+      - '0x143a'
+      - '0x1fffff'
+      - '0x1f0fff'
+      - '0x1f3fff'
+  condition: selection
+falsepositives:
+  - Endpoint protection, diagnostic software, and legitimate memory inspection
+level: high

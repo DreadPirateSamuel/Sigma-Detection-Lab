@@ -1,0 +1,22 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "wildcard": {
+          "winlog.channel": {
+            "value": "Microsoft-Windows-Sysmon/Operational",
+            "case_insensitive": true
+          }
+        }
+      },
+      {
+        "wildcard": {
+          "event.code": {
+            "value": "21",
+            "case_insensitive": true
+          }
+        }
+      }
+    ]
+  }
+}

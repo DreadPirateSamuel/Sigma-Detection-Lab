@@ -1,0 +1,31 @@
+title: Scheduled Task Creation Through Schtasks
+id: 9183aef1-25d3-4b3c-b890-9f6d5183c4d1
+status: experimental
+description: Detects schtasks process creation with a create argument and either a task-action or XML-definition argument. This exposes task creation for investigation without asserting malicious intent.
+references:
+  - https://attack.mitre.org/techniques/T1053/005/
+  - https://learn.microsoft.com/en-us/windows/win32/taskschd/schtasks
+author: Samuel Yoder
+date: 2026-10-05
+tags:
+  - attack.execution
+  - attack.persistence
+  - attack.privilege-escalation
+  - attack.t1053.005
+logsource:
+  product: windows
+  category: process_creation
+detection:
+  selection:
+    EventID: 1
+    Image|endswith: '\schtasks.exe'
+  selection_create:
+    CommandLine|contains: ' /create '
+  selection_action:
+    CommandLine|contains:
+      - ' /tr '
+      - ' /xml '
+  condition: selection and selection_create and selection_action
+falsepositives:
+  - Software installation, maintenance tasks, and legitimate task scheduling
+level: medium

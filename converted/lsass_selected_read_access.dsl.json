@@ -1,0 +1,115 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "wildcard": {
+          "winlog.channel": {
+            "value": "Microsoft-Windows-Sysmon/Operational",
+            "case_insensitive": true
+          }
+        }
+      },
+      {
+        "bool": {
+          "filter": [
+            {
+              "wildcard": {
+                "event.code": {
+                  "value": "10",
+                  "case_insensitive": true
+                }
+              }
+            },
+            {
+              "bool": {
+                "should": [
+                  {
+                    "wildcard": {
+                      "winlog.event_data.GrantedAccess": {
+                        "value": "0x1010",
+                        "case_insensitive": true
+                      }
+                    }
+                  },
+                  {
+                    "wildcard": {
+                      "winlog.event_data.GrantedAccess": {
+                        "value": "0x1410",
+                        "case_insensitive": true
+                      }
+                    }
+                  },
+                  {
+                    "wildcard": {
+                      "winlog.event_data.GrantedAccess": {
+                        "value": "0x1438",
+                        "case_insensitive": true
+                      }
+                    }
+                  },
+                  {
+                    "wildcard": {
+                      "winlog.event_data.GrantedAccess": {
+                        "value": "0x143a",
+                        "case_insensitive": true
+                      }
+                    }
+                  },
+                  {
+                    "wildcard": {
+                      "winlog.event_data.GrantedAccess": {
+                        "value": "0x1fffff",
+                        "case_insensitive": true
+                      }
+                    }
+                  },
+                  {
+                    "wildcard": {
+                      "winlog.event_data.GrantedAccess": {
+                        "value": "0x101ffb",
+                        "case_insensitive": true
+                      }
+                    }
+                  },
+                  {
+                    "wildcard": {
+                      "winlog.event_data.GrantedAccess": {
+                        "value": "0x1f0fff",
+                        "case_insensitive": true
+                      }
+                    }
+                  },
+                  {
+                    "wildcard": {
+                      "winlog.event_data.GrantedAccess": {
+                        "value": "0x1f1fff",
+                        "case_insensitive": true
+                      }
+                    }
+                  },
+                  {
+                    "wildcard": {
+                      "winlog.event_data.GrantedAccess": {
+                        "value": "0x1f3fff",
+                        "case_insensitive": true
+                      }
+                    }
+                  }
+                ],
+                "minimum_should_match": 1
+              }
+            },
+            {
+              "wildcard": {
+                "winlog.event_data.TargetImage": {
+                  "value": "*\\\\lsass.exe",
+                  "case_insensitive": true
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

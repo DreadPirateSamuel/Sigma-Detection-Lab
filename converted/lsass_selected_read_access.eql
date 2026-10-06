@@ -1,0 +1,1 @@
+any where winlog.channel:"Microsoft-Windows-Sysmon/Operational" and (event.code:"10" and (winlog.event_data.GrantedAccess like~ ("0x1010", "0x1410", "0x1438", "0x143a", "0x1fffff", "0x101ffb", "0x1f0fff", "0x1f1fff", "0x1f3fff")) and winlog.event_data.TargetImage:"*\\lsass.exe")

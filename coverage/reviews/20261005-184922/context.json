@@ -1,0 +1,1130 @@
+{
+  "utc": "2026-10-05T18:49:22.682248+00:00",
+  "status": "review_complete",
+  "method": "Single PIT; public/attack records only; fixed feature groups, no raw events",
+  "interpretation": "Public matches require review; unmatched precursors are not technique-wide false negatives.",
+  "rules": [
+    {
+      "rule": "lsass_selected_read_access.yml",
+      "id": "70270591-fbdc-4c88-8f82-217b1ad0d44e",
+      "rule_sha256": "cf431b4ceb9a86cab8126b435b5a67e247ec5a0761388b5cd9785bf66eafecaf",
+      "public_matches": 86,
+      "public_groups": [
+        {
+          "access_mask": "0x1410",
+          "corpus": "win11-client",
+          "file": "Logs_Win11/Microsoft-Windows-Sysmon%4Operational.evtx",
+          "writer": "dropbox.exe",
+          "writer_location": "Program Files",
+          "events": 2
+        },
+        {
+          "access_mask": "0x1410",
+          "corpus": "win11-client",
+          "file": "Logs_Win11/Microsoft-Windows-Sysmon%4Operational.evtx",
+          "writer": "dropboxupdate.exe",
+          "writer_location": "AppData",
+          "events": 2
+        },
+        {
+          "access_mask": "0x1410",
+          "corpus": "win11-client",
+          "file": "Logs_Win11/Microsoft-Windows-Sysmon%4Operational.evtx",
+          "writer": "dropboxupdate.exe",
+          "writer_location": "Program Files",
+          "events": 12
+        },
+        {
+          "access_mask": "0x1410",
+          "corpus": "win11-client",
+          "file": "Logs_Win11/Microsoft-Windows-Sysmon%4Operational.evtx",
+          "writer": "mrt.exe",
+          "writer_location": "Windows/System32",
+          "events": 9
+        },
+        {
+          "access_mask": "0x1410",
+          "corpus": "win11-client",
+          "file": "Logs_Win11/Microsoft-Windows-Sysmon%4Operational.evtx",
+          "writer": "msiexec.exe",
+          "writer_location": "Windows/SysWOW64",
+          "events": 5
+        },
+        {
+          "access_mask": "0x1410",
+          "corpus": "win11-client",
+          "file": "Logs_Win11/Microsoft-Windows-Sysmon%4Operational.evtx",
+          "writer": "officeclicktorun.exe",
+          "writer_location": "Program Files",
+          "events": 1
+        },
+        {
+          "access_mask": "0x1410",
+          "corpus": "win11-client",
+          "file": "Logs_Win11/Microsoft-Windows-Sysmon%4Operational.evtx",
+          "writer": "wmiprvse.exe",
+          "writer_location": "Windows/System32",
+          "events": 1
+        },
+        {
+          "access_mask": "0x1fffff",
+          "corpus": "win11-client",
+          "file": "Logs_Win11/Microsoft-Windows-Sysmon%4Operational.evtx",
+          "writer": "csrss.exe",
+          "writer_location": "Windows/System32",
+          "events": 2
+        },
+        {
+          "access_mask": "0x1fffff",
+          "corpus": "win11-client",
+          "file": "Logs_Win11/Microsoft-Windows-Sysmon%4Operational.evtx",
+          "writer": "msiexec.exe",
+          "writer_location": "Windows/System32",
+          "events": 50
+        },
+        {
+          "access_mask": "0x1fffff",
+          "corpus": "win11-client",
+          "file": "Logs_Win11/Microsoft-Windows-Sysmon%4Operational.evtx",
+          "writer": "wininit.exe",
+          "writer_location": "Windows/System32",
+          "events": 2
+        }
+      ],
+      "attack_groups": [
+        {
+          "access_mask": "0x1000",
+          "file": "ppl_bypass_ppldump_knowdll_hijack_sysmon_security.evtx",
+          "rule_matched": false,
+          "tactic": "Credential Access",
+          "writer": "ppldump.exe",
+          "writer_location": "other",
+          "events": 2
+        },
+        {
+          "access_mask": "0x1010",
+          "file": "PanacheSysmon_vs_AtomicRedTeam01.evtx",
+          "rule_matched": true,
+          "tactic": "AutomatedTestingTools",
+          "writer": "powershell.exe",
+          "writer_location": "Windows/System32",
+          "events": 1
+        },
+        {
+          "access_mask": "0x1010",
+          "file": "babyshark_mimikatz_powershell.evtx",
+          "rule_matched": true,
+          "tactic": "Credential Access",
+          "writer": "powershell.exe",
+          "writer_location": "Windows/System32",
+          "events": 2
+        },
+        {
+          "access_mask": "0x1010",
+          "file": "sysmon_10_lsass_mimikatz_sekurlsa_logonpasswords.evtx",
+          "rule_matched": true,
+          "tactic": "Credential Access",
+          "writer": "mimikatz.exe",
+          "writer_location": "other",
+          "events": 1
+        },
+        {
+          "access_mask": "0x101ffb",
+          "file": "sysmon_privesc_from_admin_to_system_handle_inheritance.evtx",
+          "rule_matched": true,
+          "tactic": "Privilege Escalation",
+          "writer": "python.exe",
+          "writer_location": "other",
+          "events": 1
+        },
+        {
+          "access_mask": "0x1410",
+          "file": "discovery_meterpreter_ps_cmd_process_listing_sysmon_10.evtx",
+          "rule_matched": true,
+          "tactic": "Discovery",
+          "writer": "m.exe",
+          "writer_location": "other",
+          "events": 1
+        },
+        {
+          "access_mask": "0x1410",
+          "file": "ppl_bypass_ppldump_knowdll_hijack_sysmon_security.evtx",
+          "rule_matched": true,
+          "tactic": "Credential Access",
+          "writer": "services.exe",
+          "writer_location": "Windows/System32",
+          "events": 1
+        },
+        {
+          "access_mask": "0x1410",
+          "file": "sysmon_20_21_1_CommandLineEventConsumer.evtx",
+          "rule_matched": true,
+          "tactic": "Persistence",
+          "writer": "python.exe",
+          "writer_location": "other",
+          "events": 1
+        },
+        {
+          "access_mask": "0x1410",
+          "file": "tutto_malseclogon.evtx",
+          "rule_matched": true,
+          "tactic": "Credential Access",
+          "writer": "malseclogon.exe",
+          "writer_location": "other",
+          "events": 1
+        },
+        {
+          "access_mask": "0x143a",
+          "file": "sysmon_3_10_Invoke-Mimikatz_hosted_Github.evtx",
+          "rule_matched": true,
+          "tactic": "Credential Access",
+          "writer": "powershell.exe",
+          "writer_location": "Windows/System32",
+          "events": 1
+        },
+        {
+          "access_mask": "0x1f1fff",
+          "file": "CA_sysmon_hashdump_cmd_meterpreter.evtx",
+          "rule_matched": true,
+          "tactic": "Credential Access",
+          "writer": "voice_mail.msg.exe",
+          "writer_location": "other",
+          "events": 1
+        },
+        {
+          "access_mask": "0x1fffff",
+          "file": "DE_BYOV_Zam64_CA_Memdump_sysmon_7_10.evtx",
+          "rule_matched": true,
+          "tactic": "Defense Evasion",
+          "writer": "ppldump.exe",
+          "writer_location": "other",
+          "events": 1
+        },
+        {
+          "access_mask": "0x1fffff",
+          "file": "ppl_bypass_ppldump_knowdll_hijack_sysmon_security.evtx",
+          "rule_matched": true,
+          "tactic": "Credential Access",
+          "writer": "services.exe",
+          "writer_location": "Windows/System32",
+          "events": 1
+        },
+        {
+          "access_mask": "0x1fffff",
+          "file": "sysmon_10_11_lsass_memdump.evtx",
+          "rule_matched": true,
+          "tactic": "Credential Access",
+          "writer": "procdump.exe",
+          "writer_location": "other",
+          "events": 1
+        },
+        {
+          "access_mask": "0x1fffff",
+          "file": "sysmon_10_11_lsass_memdump.evtx",
+          "rule_matched": true,
+          "tactic": "Credential Access",
+          "writer": "taskmgr.exe",
+          "writer_location": "Windows/System32",
+          "events": 1
+        },
+        {
+          "access_mask": "0x1fffff",
+          "file": "sysmon_10_11_outlfank_dumpert_and_andrewspecial_memdump.evtx",
+          "rule_matched": true,
+          "tactic": "Credential Access",
+          "writer": "andrewspecial.exe",
+          "writer_location": "other",
+          "events": 2
+        },
+        {
+          "access_mask": "0x1fffff",
+          "file": "sysmon_10_11_outlfank_dumpert_and_andrewspecial_memdump.evtx",
+          "rule_matched": true,
+          "tactic": "Credential Access",
+          "writer": "outflank-dumpert.exe",
+          "writer_location": "other",
+          "events": 2
+        },
+        {
+          "access_mask": "0x1fffff",
+          "file": "sysmon_10_11_outlfank_dumpert_and_andrewspecial_memdump.evtx",
+          "rule_matched": true,
+          "tactic": "Credential Access",
+          "writer": "rundll32.exe",
+          "writer_location": "Windows/System32",
+          "events": 4
+        },
+        {
+          "access_mask": "0x1fffff",
+          "file": "sysmon_2x10_lsass_with_different_pid_RtlCreateProcessReflection.evtx",
+          "rule_matched": true,
+          "tactic": "Credential Access",
+          "writer": "procdump.exe",
+          "writer_location": "other",
+          "events": 1
+        },
+        {
+          "access_mask": "0x1fffff",
+          "file": "sysmon_2x10_lsass_with_different_pid_RtlCreateProcessReflection.evtx",
+          "rule_matched": true,
+          "tactic": "Credential Access",
+          "writer": "procdump64.exe",
+          "writer_location": "other",
+          "events": 2
+        }
+      ]
+    },
+    {
+      "rule": "powershell_encoded_command.yml",
+      "id": "aa1fe0be-d2c4-488d-90f6-b080e43fe369",
+      "rule_sha256": "4f52ce605c8dc283005e3ff70aac35d5554fd7d39bb284deab702e565c49e814",
+      "public_matches": 0,
+      "public_groups": [],
+      "attack_groups": [
+        {
+          "command_present": true,
+          "encoded_switch_token": false,
+          "file": "ImpersonateUser-via local Pass The Hash Sysmon and Security.evtx",
+          "rule_matched": false,
+          "selected_spaced_flag": false,
+          "tactic": "Lateral Movement",
+          "writer": "powershell.exe",
+          "writer_location": "Windows/System32",
+          "events": 1
+        },
+        {
+          "command_present": true,
+          "encoded_switch_token": false,
+          "file": "LM_sysmon_3_12_13_1_SharpRDP.evtx",
+          "rule_matched": false,
+          "selected_spaced_flag": false,
+          "tactic": "Lateral Movement",
+          "writer": "powershell.exe",
+          "writer_location": "Windows/System32",
+          "events": 1
+        },
+        {
+          "command_present": true,
+          "encoded_switch_token": false,
+          "file": "LM_sysmon_psexec_smb_meterpreter.evtx",
+          "rule_matched": false,
+          "selected_spaced_flag": false,
+          "tactic": "Lateral Movement",
+          "writer": "powershell.exe",
+          "writer_location": "Windows/System32",
+          "events": 2
+        },
+        {
+          "command_present": true,
+          "encoded_switch_token": false,
+          "file": "PanacheSysmon_vs_AtomicRedTeam01.evtx",
+          "rule_matched": false,
+          "selected_spaced_flag": false,
+          "tactic": "AutomatedTestingTools",
+          "writer": "powershell.exe",
+          "writer_location": "Windows/System32",
+          "events": 3
+        },
+        {
+          "command_present": true,
+          "encoded_switch_token": false,
+          "file": "Sysmon_13_1_UAC_Bypass_EventVwrBypass.evtx",
+          "rule_matched": false,
+          "selected_spaced_flag": false,
+          "tactic": "Privilege Escalation",
+          "writer": "powershell.exe",
+          "writer_location": "Windows/System32",
+          "events": 1
+        },
+        {
+          "command_present": true,
+          "encoded_switch_token": false,
+          "file": "babyshark_mimikatz_powershell.evtx",
+          "rule_matched": false,
+          "selected_spaced_flag": false,
+          "tactic": "Credential Access",
+          "writer": "powershell.exe",
+          "writer_location": "Windows/System32",
+          "events": 1
+        },
+        {
+          "command_present": true,
+          "encoded_switch_token": false,
+          "file": "execution_evasion_visual_studio_prebuild_event.evtx",
+          "rule_matched": false,
+          "selected_spaced_flag": false,
+          "tactic": "Execution",
+          "writer": "powershell.exe",
+          "writer_location": "Windows/SysWOW64",
+          "events": 1
+        },
+        {
+          "command_present": true,
+          "encoded_switch_token": false,
+          "file": "lm_sysmon_18_remshell_over_namedpipe.evtx",
+          "rule_matched": false,
+          "selected_spaced_flag": false,
+          "tactic": "Lateral Movement",
+          "writer": "powershell.exe",
+          "writer_location": "Windows/System32",
+          "events": 1
+        },
+        {
+          "command_present": true,
+          "encoded_switch_token": false,
+          "file": "panache_sysmon_vs_EDRTestingScript.evtx",
+          "rule_matched": false,
+          "selected_spaced_flag": false,
+          "tactic": "AutomatedTestingTools",
+          "writer": "powershell.exe",
+          "writer_location": "Windows/System32",
+          "events": 2
+        },
+        {
+          "command_present": true,
+          "encoded_switch_token": false,
+          "file": "privesc_seimpersonate_tosys_spoolsv_sysmon_17_18.evtx",
+          "rule_matched": false,
+          "selected_spaced_flag": false,
+          "tactic": "Privilege Escalation",
+          "writer": "powershell.exe",
+          "writer_location": "Windows/System32",
+          "events": 1
+        },
+        {
+          "command_present": true,
+          "encoded_switch_token": false,
+          "file": "sysmon_1_7_elevate_uacbypass_sysprep.evtx",
+          "rule_matched": false,
+          "selected_spaced_flag": false,
+          "tactic": "Privilege Escalation",
+          "writer": "powershell.exe",
+          "writer_location": "Windows/System32",
+          "events": 1
+        },
+        {
+          "command_present": true,
+          "encoded_switch_token": true,
+          "file": "discovery_sysmon_1_iis_pwd_and_config_discovery_appcmd.evtx",
+          "rule_matched": true,
+          "selected_spaced_flag": true,
+          "tactic": "Credential Access",
+          "writer": "powershell.exe",
+          "writer_location": "Windows/System32",
+          "events": 1
+        }
+      ]
+    },
+    {
+      "rule": "run_key_suspicious_value.yml",
+      "id": "25e21577-957a-49f1-86d6-51d1c0f0fabd",
+      "rule_sha256": "eba14bab9f428f0f6e6258d337ebb725972db5a4a50333fe66cc9e882cfa87e7",
+      "public_matches": 2,
+      "public_groups": [
+        {
+          "appdata_reference": true,
+          "corpus": "win11-client",
+          "file": "Logs_Win11/Microsoft-Windows-Sysmon%4Operational.evtx",
+          "key_class": "RunOnce",
+          "payload_indicators": [
+            "cmd.exe"
+          ],
+          "referenced_executables": [
+            "cmd.exe"
+          ],
+          "temp_reference": false,
+          "value_present": true,
+          "writer": "target.exe",
+          "writer_location": "AppData",
+          "events": 1
+        },
+        {
+          "appdata_reference": true,
+          "corpus": "win11-client",
+          "file": "Logs_Win11/Microsoft-Windows-Sysmon%4Operational.evtx",
+          "key_class": "RunOnce",
+          "payload_indicators": [],
+          "referenced_executables": [
+            "python-3.10.2-amd64.exe"
+          ],
+          "temp_reference": false,
+          "value_present": true,
+          "writer": "target.exe",
+          "writer_location": "Temp",
+          "events": 1
+        }
+      ],
+      "attack_groups": [
+        {
+          "appdata_reference": false,
+          "file": "PanacheSysmon_vs_AtomicRedTeam01.evtx",
+          "key_class": "Run",
+          "payload_indicators": [],
+          "referenced_executables": [
+            "atomicredteam.exe"
+          ],
+          "rule_matched": false,
+          "tactic": "AutomatedTestingTools",
+          "temp_reference": false,
+          "value_present": true,
+          "writer": "reg.exe",
+          "writer_location": "Windows/System32",
+          "events": 1
+        },
+        {
+          "appdata_reference": false,
+          "file": "PanacheSysmon_vs_AtomicRedTeam01.evtx",
+          "key_class": "RunOnce",
+          "payload_indicators": [
+            "powershell"
+          ],
+          "referenced_executables": [
+            "powershell.exe"
+          ],
+          "rule_matched": true,
+          "tactic": "AutomatedTestingTools",
+          "temp_reference": false,
+          "value_present": true,
+          "writer": "powershell.exe",
+          "writer_location": "Windows/System32",
+          "events": 1
+        },
+        {
+          "appdata_reference": false,
+          "file": "evasion_persis_hidden_run_keyvalue_sysmon_13.evtx",
+          "key_class": "Run",
+          "payload_indicators": [],
+          "referenced_executables": [
+            "taskhost.exe"
+          ],
+          "rule_matched": false,
+          "tactic": "Persistence",
+          "temp_reference": false,
+          "value_present": true,
+          "writer": "a.exe",
+          "writer_location": "other",
+          "events": 1
+        },
+        {
+          "appdata_reference": false,
+          "file": "lm_remote_registry_sysmon_1_13_3.evtx",
+          "key_class": "Run",
+          "payload_indicators": [
+            "rundll32"
+          ],
+          "referenced_executables": [
+            "rundll32.exe",
+            "smssvc.dll"
+          ],
+          "rule_matched": true,
+          "tactic": "Lateral Movement",
+          "temp_reference": false,
+          "value_present": true,
+          "writer": "svchost.exe",
+          "writer_location": "Windows/System32",
+          "events": 1
+        },
+        {
+          "appdata_reference": false,
+          "file": "sideloading_injection_persistence_run_key.evtx",
+          "key_class": "Run",
+          "payload_indicators": [],
+          "referenced_executables": [
+            "tendyron.exe"
+          ],
+          "rule_matched": false,
+          "tactic": "AutomatedTestingTools",
+          "temp_reference": false,
+          "value_present": true,
+          "writer": "tendyron.exe",
+          "writer_location": "other",
+          "events": 1
+        },
+        {
+          "appdata_reference": false,
+          "file": "wmi_remote_registry_sysmon.evtx",
+          "key_class": "Run",
+          "payload_indicators": [
+            "rundll32"
+          ],
+          "referenced_executables": [
+            "a.dll",
+            "rundll32.exe"
+          ],
+          "rule_matched": true,
+          "tactic": "Lateral Movement",
+          "temp_reference": false,
+          "value_present": true,
+          "writer": "wmiprvse.exe",
+          "writer_location": "Windows/System32",
+          "events": 1
+        },
+        {
+          "appdata_reference": true,
+          "file": "DE_timestomp_and_dll_sideloading_and_RunPersist.evtx",
+          "key_class": "Run",
+          "payload_indicators": [],
+          "referenced_executables": [
+            "svchost.exe"
+          ],
+          "rule_matched": true,
+          "tactic": "AutomatedTestingTools",
+          "temp_reference": false,
+          "value_present": true,
+          "writer": "nvsmart.exe",
+          "writer_location": "AppData",
+          "events": 1
+        }
+      ]
+    },
+    {
+      "rule": "schtasks_create_task.yml",
+      "id": "9183aef1-25d3-4b3c-b890-9f6d5183c4d1",
+      "rule_sha256": "1c7a883dfcb7e7d941b3dd0c54964dc459c5f179b796d9e340ed799bf20101e4",
+      "public_matches": 9,
+      "public_groups": [
+        {
+          "corpus": "win11-client",
+          "file": "Logs_Win11/Microsoft-Windows-Sysmon%4Operational.evtx",
+          "literal_create_tr_spaces": false,
+          "parent": "integrator.exe",
+          "referenced_executables": [
+            "schtasks.exe"
+          ],
+          "switch_change": false,
+          "switch_create": true,
+          "switch_delete": false,
+          "switch_query": false,
+          "switch_run": false,
+          "switch_tr": false,
+          "switch_xml": true,
+          "writer": "schtasks.exe",
+          "writer_location": "Windows/SysWOW64",
+          "events": 4
+        },
+        {
+          "corpus": "win11-client",
+          "file": "Logs_Win11/Microsoft-Windows-Sysmon%4Operational.evtx",
+          "literal_create_tr_spaces": false,
+          "parent": "officeclicktorun.exe",
+          "referenced_executables": [
+            "schtasks.exe"
+          ],
+          "switch_change": false,
+          "switch_create": true,
+          "switch_delete": false,
+          "switch_query": false,
+          "switch_run": false,
+          "switch_tr": false,
+          "switch_xml": true,
+          "writer": "schtasks.exe",
+          "writer_location": "Windows/System32",
+          "events": 4
+        },
+        {
+          "corpus": "win11-client",
+          "file": "Logs_Win11/Microsoft-Windows-Sysmon%4Operational.evtx",
+          "literal_create_tr_spaces": true,
+          "parent": "teamviewer_.exe",
+          "referenced_executables": [
+            "teamviewer_.exe"
+          ],
+          "switch_change": false,
+          "switch_create": true,
+          "switch_delete": false,
+          "switch_query": false,
+          "switch_run": false,
+          "switch_tr": true,
+          "switch_xml": false,
+          "writer": "schtasks.exe",
+          "writer_location": "Windows/SysWOW64",
+          "events": 1
+        }
+      ],
+      "attack_groups": [
+        {
+          "file": "PanacheSysmon_vs_AtomicRedTeam01.evtx",
+          "literal_create_tr_spaces": true,
+          "parent": "cmd.exe",
+          "referenced_executables": [
+            "cmd.exe"
+          ],
+          "rule_matched": true,
+          "switch_change": false,
+          "switch_create": true,
+          "switch_delete": false,
+          "switch_query": false,
+          "switch_run": false,
+          "switch_tr": true,
+          "switch_xml": false,
+          "tactic": "AutomatedTestingTools",
+          "writer": "schtasks.exe",
+          "writer_location": "Windows/System32",
+          "events": 2
+        },
+        {
+          "file": "Sysmon_UACME_34.evtx",
+          "literal_create_tr_spaces": false,
+          "parent": "uacme.exe",
+          "referenced_executables": [
+            "schtasks.exe"
+          ],
+          "rule_matched": false,
+          "switch_change": false,
+          "switch_create": false,
+          "switch_delete": false,
+          "switch_query": false,
+          "switch_run": true,
+          "switch_tr": false,
+          "switch_xml": false,
+          "tactic": "Privilege Escalation",
+          "writer": "schtasks.exe",
+          "writer_location": "Windows/System32",
+          "events": 1
+        },
+        {
+          "file": "exec_persist_rundll32_mshta_scheduledtask_sysmon_1_3_11.evtx",
+          "literal_create_tr_spaces": true,
+          "parent": "mshta.exe",
+          "referenced_executables": [
+            "mshta.exe",
+            "schtasks.exe"
+          ],
+          "rule_matched": true,
+          "switch_change": false,
+          "switch_create": true,
+          "switch_delete": false,
+          "switch_query": false,
+          "switch_run": false,
+          "switch_tr": true,
+          "switch_xml": false,
+          "tactic": "Execution",
+          "writer": "schtasks.exe",
+          "writer_location": "Windows/System32",
+          "events": 1
+        },
+        {
+          "file": "panache_sysmon_vs_EDRTestingScript.evtx",
+          "literal_create_tr_spaces": true,
+          "parent": "cmd.exe",
+          "referenced_executables": [
+            "calc.exe"
+          ],
+          "rule_matched": true,
+          "switch_change": false,
+          "switch_create": true,
+          "switch_delete": false,
+          "switch_query": false,
+          "switch_run": false,
+          "switch_tr": true,
+          "switch_xml": false,
+          "tactic": "AutomatedTestingTools",
+          "writer": "schtasks.exe",
+          "writer_location": "Windows/System32",
+          "events": 1
+        },
+        {
+          "file": "persistence_sysmon_11_13_1_shime_appfix.evtx",
+          "literal_create_tr_spaces": false,
+          "parent": "wsqmcons.exe",
+          "referenced_executables": [
+            "schtasks.exe"
+          ],
+          "rule_matched": false,
+          "switch_change": false,
+          "switch_create": false,
+          "switch_delete": true,
+          "switch_query": false,
+          "switch_run": false,
+          "switch_tr": false,
+          "switch_xml": false,
+          "tactic": "Persistence",
+          "writer": "schtasks.exe",
+          "writer_location": "Windows/System32",
+          "events": 1
+        },
+        {
+          "file": "rundll32_cmd_schtask.evtx",
+          "literal_create_tr_spaces": false,
+          "parent": "cmd.exe",
+          "referenced_executables": [],
+          "rule_matched": true,
+          "switch_change": false,
+          "switch_create": true,
+          "switch_delete": false,
+          "switch_query": false,
+          "switch_run": false,
+          "switch_tr": false,
+          "switch_xml": true,
+          "tactic": "AutomatedTestingTools",
+          "writer": "schtasks.exe",
+          "writer_location": "Windows/SysWOW64",
+          "events": 1
+        },
+        {
+          "file": "sysmon_1_11_exec_as_system_via_schedtask.evtx",
+          "literal_create_tr_spaces": false,
+          "parent": "python.exe",
+          "referenced_executables": [
+            "schtasks.exe"
+          ],
+          "rule_matched": false,
+          "switch_change": false,
+          "switch_create": false,
+          "switch_delete": false,
+          "switch_query": false,
+          "switch_run": true,
+          "switch_tr": false,
+          "switch_xml": false,
+          "tactic": "Privilege Escalation",
+          "writer": "schtasks.exe",
+          "writer_location": "Windows/System32",
+          "events": 1
+        },
+        {
+          "file": "sysmon_1_11_exec_as_system_via_schedtask.evtx",
+          "literal_create_tr_spaces": false,
+          "parent": "python.exe",
+          "referenced_executables": [
+            "schtasks.exe"
+          ],
+          "rule_matched": false,
+          "switch_change": false,
+          "switch_create": false,
+          "switch_delete": true,
+          "switch_query": false,
+          "switch_run": false,
+          "switch_tr": false,
+          "switch_xml": false,
+          "tactic": "Privilege Escalation",
+          "writer": "schtasks.exe",
+          "writer_location": "Windows/System32",
+          "events": 1
+        },
+        {
+          "file": "sysmon_1_11_exec_as_system_via_schedtask.evtx",
+          "literal_create_tr_spaces": false,
+          "parent": "python.exe",
+          "referenced_executables": [
+            "schtasks.exe"
+          ],
+          "rule_matched": true,
+          "switch_change": false,
+          "switch_create": true,
+          "switch_delete": false,
+          "switch_query": false,
+          "switch_run": false,
+          "switch_tr": false,
+          "switch_xml": true,
+          "tactic": "Privilege Escalation",
+          "writer": "schtasks.exe",
+          "writer_location": "Windows/System32",
+          "events": 1
+        },
+        {
+          "file": "sysmon_exec_from_vss_persistence.evtx",
+          "literal_create_tr_spaces": true,
+          "parent": "cmd.exe",
+          "referenced_executables": [
+            "schtasks.exe",
+            "svhost64.exe"
+          ],
+          "rule_matched": true,
+          "switch_change": false,
+          "switch_create": true,
+          "switch_delete": false,
+          "switch_query": false,
+          "switch_run": false,
+          "switch_tr": true,
+          "switch_xml": false,
+          "tactic": "Execution",
+          "writer": "schtasks.exe",
+          "writer_location": "Windows/System32",
+          "events": 1
+        }
+      ]
+    },
+    {
+      "rule": "windows_event_log_cleared.yml",
+      "id": "5dc36677-0fa7-459e-809b-566190f33b61",
+      "rule_sha256": "88d52c75ec2fb97cf8b81d22286de94552f6b3d0db44f7348b847d258c4d4d59",
+      "public_matches": 1,
+      "public_groups": [
+        {
+          "channel": "System",
+          "corpus": "win10-client",
+          "event_code": "104",
+          "file": "Logs_Client/System.evtx",
+          "provider": "Microsoft-Windows-Eventlog",
+          "events": 1
+        }
+      ],
+      "attack_groups": [
+        {
+          "channel": "Security",
+          "event_code": "1102",
+          "file": "4624 LT3 AnonymousLogon Localhost - JuicyPotato.evtx",
+          "provider": "Microsoft-Windows-Eventlog",
+          "rule_matched": true,
+          "tactic": "Privilege Escalation",
+          "events": 1
+        },
+        {
+          "channel": "Security",
+          "event_code": "1102",
+          "file": "ACL_ForcePwd_SPNAdd_User_Computer_Accounts.evtx",
+          "provider": "Microsoft-Windows-Eventlog",
+          "rule_matched": true,
+          "tactic": "Credential Access",
+          "events": 1
+        },
+        {
+          "channel": "Security",
+          "event_code": "1102",
+          "file": "CA_chrome_firefox_opera_4663.evtx",
+          "provider": "Microsoft-Windows-Eventlog",
+          "rule_matched": true,
+          "tactic": "Credential Access",
+          "events": 1
+        },
+        {
+          "channel": "Security",
+          "event_code": "1102",
+          "file": "DACL_DCSync_Right_Powerview_ Add-DomainObjectAcl.evtx",
+          "provider": "Microsoft-Windows-Eventlog",
+          "rule_matched": true,
+          "tactic": "Persistence",
+          "events": 1
+        },
+        {
+          "channel": "Security",
+          "event_code": "1102",
+          "file": "DE_1102_security_log_cleared.evtx",
+          "provider": "Microsoft-Windows-Eventlog",
+          "rule_matched": true,
+          "tactic": "Defense Evasion",
+          "events": 1
+        },
+        {
+          "channel": "Security",
+          "event_code": "1102",
+          "file": "DE_RDP_Tunnel_5156.evtx",
+          "provider": "Microsoft-Windows-Eventlog",
+          "rule_matched": true,
+          "tactic": "Command and Control",
+          "events": 1
+        },
+        {
+          "channel": "Security",
+          "event_code": "1102",
+          "file": "DE_suspicious_remote_eventlog_svc_access_5145.evtx",
+          "provider": "Microsoft-Windows-Eventlog",
+          "rule_matched": true,
+          "tactic": "Defense Evasion",
+          "events": 1
+        },
+        {
+          "channel": "Security",
+          "event_code": "1102",
+          "file": "LM_4624_mimikatz_sekurlsa_pth_source_machine.evtx",
+          "provider": "Microsoft-Windows-Eventlog",
+          "rule_matched": true,
+          "tactic": "Lateral Movement",
+          "events": 1
+        },
+        {
+          "channel": "Security",
+          "event_code": "1102",
+          "file": "LM_ScheduledTask_ATSVC_target_host.evtx",
+          "provider": "Microsoft-Windows-Eventlog",
+          "rule_matched": true,
+          "tactic": "Lateral Movement",
+          "events": 1
+        },
+        {
+          "channel": "Security",
+          "event_code": "1102",
+          "file": "LM_WMIC_4648_rpcss.evtx",
+          "provider": "Microsoft-Windows-Eventlog",
+          "rule_matched": true,
+          "tactic": "Lateral Movement",
+          "events": 1
+        },
+        {
+          "channel": "Security",
+          "event_code": "1102",
+          "file": "NTLM2SelfRelay-med0x2e-security_4624_4688.evtx",
+          "provider": "Microsoft-Windows-Eventlog",
+          "rule_matched": true,
+          "tactic": "Privilege Escalation",
+          "events": 1
+        },
+        {
+          "channel": "Security",
+          "event_code": "1102",
+          "file": "Runas_4624_4648_Webshell_CreateProcessAsUserA.evtx",
+          "provider": "Microsoft-Windows-Eventlog",
+          "rule_matched": true,
+          "tactic": "Privilege Escalation",
+          "events": 1
+        },
+        {
+          "channel": "Security",
+          "event_code": "1102",
+          "file": "Zerologon_VoidSec_CVE-2020-1472_4626_LT3_Anonym_follwedby_4742_DC_Anony_DC.evtx",
+          "provider": "Microsoft-Windows-Eventlog",
+          "rule_matched": true,
+          "tactic": "Credential Access",
+          "events": 1
+        },
+        {
+          "channel": "Security",
+          "event_code": "1102",
+          "file": "dicovery_4661_net_group_domain_admins_target.evtx",
+          "provider": "Microsoft-Windows-Eventlog",
+          "rule_matched": true,
+          "tactic": "Discovery",
+          "events": 1
+        },
+        {
+          "channel": "Security",
+          "event_code": "1102",
+          "file": "discovery_bloodhound.evtx",
+          "provider": "Microsoft-Windows-Eventlog",
+          "rule_matched": true,
+          "tactic": "Discovery",
+          "events": 1
+        },
+        {
+          "channel": "Security",
+          "event_code": "1102",
+          "file": "discovery_psloggedon.evtx",
+          "provider": "Microsoft-Windows-Eventlog",
+          "rule_matched": true,
+          "tactic": "Discovery",
+          "events": 1
+        },
+        {
+          "channel": "Security",
+          "event_code": "1102",
+          "file": "kerberos_pwd_spray_4771.evtx",
+          "provider": "Microsoft-Windows-Eventlog",
+          "rule_matched": true,
+          "tactic": "Credential Access",
+          "events": 1
+        },
+        {
+          "channel": "Security",
+          "event_code": "1102",
+          "file": "net_share_drive_5142.evtx",
+          "provider": "Microsoft-Windows-Eventlog",
+          "rule_matched": true,
+          "tactic": "Lateral Movement",
+          "events": 1
+        },
+        {
+          "channel": "Security",
+          "event_code": "1102",
+          "file": "persistence_security_dcshadow_4742.evtx",
+          "provider": "Microsoft-Windows-Eventlog",
+          "rule_matched": true,
+          "tactic": "Persistence",
+          "events": 1
+        },
+        {
+          "channel": "Security",
+          "event_code": "1102",
+          "file": "remote task update 4624 4702 same logonid.evtx",
+          "provider": "Microsoft-Windows-Eventlog",
+          "rule_matched": true,
+          "tactic": "Lateral Movement",
+          "events": 1
+        },
+        {
+          "channel": "Security",
+          "event_code": "1102",
+          "file": "remote_pwd_reset_rpc_mimikatz_postzerologon_target_DC.evtx",
+          "provider": "Microsoft-Windows-Eventlog",
+          "rule_matched": true,
+          "tactic": "Credential Access",
+          "events": 1
+        },
+        {
+          "channel": "Security",
+          "event_code": "1102",
+          "file": "remote_sam_registry_access_via_backup_operator_priv.evtx",
+          "provider": "Microsoft-Windows-Eventlog",
+          "rule_matched": true,
+          "tactic": "Credential Access",
+          "events": 1
+        },
+        {
+          "channel": "Security",
+          "event_code": "1102",
+          "file": "samaccount_spoofing_CVE-2021-42287_CVE-2021-42278_DC_securitylogs.evtx",
+          "provider": "Microsoft-Windows-Eventlog",
+          "rule_matched": true,
+          "tactic": "Privilege Escalation",
+          "events": 1
+        },
+        {
+          "channel": "Security",
+          "event_code": "1102",
+          "file": "security_4624_4673_token_manip.evtx",
+          "provider": "Microsoft-Windows-Eventlog",
+          "rule_matched": true,
+          "tactic": "Privilege Escalation",
+          "events": 1
+        },
+        {
+          "channel": "System",
+          "event_code": "104",
+          "file": "DE_104_system_log_cleared.evtx",
+          "provider": "Microsoft-Windows-Eventlog",
+          "rule_matched": true,
+          "tactic": "Defense Evasion",
+          "events": 1
+        },
+        {
+          "channel": "System",
+          "event_code": "104",
+          "file": "Zerologon_CVE-2020-1472_DFIR_System_NetLogon_Error_EventID_5805.evtx",
+          "provider": "Microsoft-Windows-Eventlog",
+          "rule_matched": true,
+          "tactic": "Credential Access",
+          "events": 1
+        }
+      ]
+    },
+    {
+      "rule": "wmi_consumer_filter_binding.yml",
+      "id": "caa854aa-f9a0-4873-a474-94a5c2417f44",
+      "rule_sha256": "de86e7c0b5f9490b69596e56fd4ed71633bdccd3cd12e7a884da6ffbd911cff3",
+      "public_matches": 0,
+      "public_groups": [],
+      "attack_groups": [
+        {
+          "event_code": "21",
+          "file": "PanacheSysmon_vs_AtomicRedTeam01.evtx",
+          "rule_matched": true,
+          "tactic": "AutomatedTestingTools",
+          "events": 2
+        },
+        {
+          "event_code": "21",
+          "file": "sysmon_20_21_1_CommandLineEventConsumer.evtx",
+          "rule_matched": true,
+          "tactic": "Persistence",
+          "events": 2
+        },
+        {
+          "event_code": "21",
+          "file": "wmighost_sysmon_20_21_1.evtx",
+          "rule_matched": true,
+          "tactic": "Persistence",
+          "events": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "wildcard": {
+          "winlog.channel": {
+            "value": "Microsoft-Windows-Sysmon/Operational",
+            "case_insensitive": true
+          }
+        }
+      },
+      {
+        "bool": {
+          "filter": [
+            {
+              "bool": {
+                "filter": [
+                  {
+                    "wildcard": {
+                      "event.code": {
+                        "value": "13",
+                        "case_insensitive": true
+                      }
+                    }
+                  },
+                  {
+                    "bool": {
+                      "should": [
+                        {
+                          "wildcard": {
+                            "registry.path": {
+                              "value": "*\\\\Software\\\\Microsoft\\\\Windows\\\\CurrentVersion\\\\Run\\\\*",
+                              "case_insensitive": true
+                            }
+                          }
+                        },
+                        {
+                          "wildcard": {
+                            "registry.path": {
+                              "value": "*\\\\Software\\\\Microsoft\\\\Windows\\\\CurrentVersion\\\\RunOnce\\\\*",
+                              "case_insensitive": true
+                            }
+                          }
+                        }
+                      ],
+                      "minimum_should_match": 1
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "bool": {
+                "should": [
+                  {
+                    "wildcard": {
+                      "registry.data.strings": {
+                        "value": "*powershell*",
+                        "case_insensitive": true
+                      }
+                    }
+                  },
+                  {
+                    "wildcard": {
+                      "registry.data.strings": {
+                        "value": "*pwsh*",
+                        "case_insensitive": true
+                      }
+                    }
+                  },
+                  {
+                    "wildcard": {
+                      "registry.data.strings": {
+                        "value": "*cmd.exe*",
+                        "case_insensitive": true
+                      }
+                    }
+                  },
+                  {
+                    "wildcard": {
+                      "registry.data.strings": {
+                        "value": "*wscript*",
+                        "case_insensitive": true
+                      }
+                    }
+                  },
+                  {
+                    "wildcard": {
+                      "registry.data.strings": {
+                        "value": "*cscript*",
+                        "case_insensitive": true
+                      }
+                    }
+                  },
+                  {
+                    "wildcard": {
+                      "registry.data.strings": {
+                        "value": "*mshta*",
+                        "case_insensitive": true
+                      }
+                    }
+                  },
+                  {
+                    "wildcard": {
+                      "registry.data.strings": {
+                        "value": "*rundll32*",
+                        "case_insensitive": true
+                      }
+                    }
+                  },
+                  {
+                    "wildcard": {
+                      "registry.data.strings": {
+                        "value": "*\\\\AppData\\\\*",
+                        "case_insensitive": true
+                      }
+                    }
+                  },
+                  {
+                    "wildcard": {
+                      "registry.data.strings": {
+                        "value": "*\\\\Temp\\\\*",
+                        "case_insensitive": true
+                      }
+                    }
+                  },
+                  {
+                    "wildcard": {
+                      "registry.data.strings": {
+                        "value": "*%APPDATA%*",
+                        "case_insensitive": true
+                      }
+                    }
+                  },
+                  {
+                    "wildcard": {
+                      "registry.data.strings": {
+                        "value": "*%TEMP%*",
+                        "case_insensitive": true
+                      }
+                    }
+                  }
+                ],
+                "minimum_should_match": 1
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

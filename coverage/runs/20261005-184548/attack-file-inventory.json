@@ -1,0 +1,1392 @@
+[
+  {
+    "tactic": "AutomatedTestingTools",
+    "file": "DE_timestomp_and_dll_sideloading_and_RunPersist.evtx",
+    "events": 23
+  },
+  {
+    "tactic": "AutomatedTestingTools",
+    "file": "PanacheSysmon_vs_AtomicRedTeam01.evtx",
+    "events": 565
+  },
+  {
+    "tactic": "AutomatedTestingTools",
+    "file": "WinDefender_Events_1117_1116_AtomicRedTeam.evtx",
+    "events": 11
+  },
+  {
+    "tactic": "AutomatedTestingTools",
+    "file": "panache_sysmon_vs_EDRTestingScript.evtx",
+    "events": 122
+  },
+  {
+    "tactic": "AutomatedTestingTools",
+    "file": "rundll32_cmd_schtask.evtx",
+    "events": 50
+  },
+  {
+    "tactic": "AutomatedTestingTools",
+    "file": "rundll32_hollowing_wermgr_masquerading.evtx",
+    "events": 4
+  },
+  {
+    "tactic": "AutomatedTestingTools",
+    "file": "sideloading_injection_persistence_run_key.evtx",
+    "events": 7
+  },
+  {
+    "tactic": "AutomatedTestingTools",
+    "file": "sideloading_uacbypass_rundll32_injection_c2.evtx",
+    "events": 18
+  },
+  {
+    "tactic": "Command and Control",
+    "file": "DE_RDP_Tunnel_5156.evtx",
+    "events": 101
+  },
+  {
+    "tactic": "Command and Control",
+    "file": "DE_RDP_Tunneling_4624.evtx",
+    "events": 18
+  },
+  {
+    "tactic": "Command and Control",
+    "file": "DE_RDP_Tunneling_TerminalServices-RemoteConnectionManagerOperational_1149.evtx",
+    "events": 228
+  },
+  {
+    "tactic": "Command and Control",
+    "file": "DE_sysmon-3-rdp-tun.evtx",
+    "events": 73
+  },
+  {
+    "tactic": "Command and Control",
+    "file": "bits_openvpn.evtx",
+    "events": 1537
+  },
+  {
+    "tactic": "Command and Control",
+    "file": "tunna_iis_rdp_smb_tunneling_sysmon_3.evtx",
+    "events": 12
+  },
+  {
+    "tactic": "Credential Access",
+    "file": "4794_DSRM_password_change_t1098.evtx",
+    "events": 1
+  },
+  {
+    "tactic": "Credential Access",
+    "file": "ACL_ForcePwd_SPNAdd_User_Computer_Accounts.evtx",
+    "events": 55
+  },
+  {
+    "tactic": "Credential Access",
+    "file": "CA_4624_4625_LogonType2_LogonProc_chrome.evtx",
+    "events": 4
+  },
+  {
+    "tactic": "Credential Access",
+    "file": "CA_DCSync_4662.evtx",
+    "events": 3
+  },
+  {
+    "tactic": "Credential Access",
+    "file": "CA_Mimikatz_Memssp_Default_Logs_Sysmon_11.evtx",
+    "events": 1
+  },
+  {
+    "tactic": "Credential Access",
+    "file": "CA_PetiPotam_etw_rpc_efsr_5_6.evtx",
+    "events": 29109
+  },
+  {
+    "tactic": "Credential Access",
+    "file": "CA_chrome_firefox_opera_4663.evtx",
+    "events": 5
+  },
+  {
+    "tactic": "Credential Access",
+    "file": "CA_hashdump_4663_4656_lsass_access.evtx",
+    "events": 2
+  },
+  {
+    "tactic": "Credential Access",
+    "file": "CA_keefarce_keepass_credump.evtx",
+    "events": 5
+  },
+  {
+    "tactic": "Credential Access",
+    "file": "CA_keepass_KeeThief_Get-KeePassDatabaseKey.evtx",
+    "events": 2
+  },
+  {
+    "tactic": "Credential Access",
+    "file": "CA_protectedstorage_5145_rpc_masterkey.evtx",
+    "events": 1
+  },
+  {
+    "tactic": "Credential Access",
+    "file": "CA_sysmon_hashdump_cmd_meterpreter.evtx",
+    "events": 9
+  },
+  {
+    "tactic": "Credential Access",
+    "file": "CA_teamviewer-dumper_sysmon_10.evtx",
+    "events": 1
+  },
+  {
+    "tactic": "Credential Access",
+    "file": "LsassSilentProcessExit_process_exit_monitor_3001_lsass.evtx",
+    "events": 2
+  },
+  {
+    "tactic": "Credential Access",
+    "file": "MSSQL_multiple_failed_logon_EventID_18456.evtx",
+    "events": 10
+  },
+  {
+    "tactic": "Credential Access",
+    "file": "Powershell_4104_MiniDumpWriteDump_Lsass.evtx",
+    "events": 4
+  },
+  {
+    "tactic": "Credential Access",
+    "file": "Sysmon13_MachineAccount_Password_Hash_Changed_via_LsarSetSecret.evtx",
+    "events": 4
+  },
+  {
+    "tactic": "Credential Access",
+    "file": "Sysmon_13_Local_Admin_Password_Changed.evtx",
+    "events": 1
+  },
+  {
+    "tactic": "Credential Access",
+    "file": "Zerologon_CVE-2020-1472_DFIR_System_NetLogon_Error_EventID_5805.evtx",
+    "events": 2
+  },
+  {
+    "tactic": "Credential Access",
+    "file": "Zerologon_VoidSec_CVE-2020-1472_4626_LT3_Anonym_follwedby_4742_DC_Anony_DC.evtx",
+    "events": 9
+  },
+  {
+    "tactic": "Credential Access",
+    "file": "babyshark_mimikatz_powershell.evtx",
+    "events": 33
+  },
+  {
+    "tactic": "Credential Access",
+    "file": "dc_applog_ntdsutil_dfir_325_326_327.evtx",
+    "events": 4
+  },
+  {
+    "tactic": "Credential Access",
+    "file": "discovery_sysmon_1_iis_pwd_and_config_discovery_appcmd.evtx",
+    "events": 40
+  },
+  {
+    "tactic": "Credential Access",
+    "file": "etw_rpc_zerologon.evtx",
+    "events": 415
+  },
+  {
+    "tactic": "Credential Access",
+    "file": "kerberos_pwd_spray_4771.evtx",
+    "events": 12
+  },
+  {
+    "tactic": "Credential Access",
+    "file": "phish_windows_credentials_powershell_scriptblockLog_4104.evtx",
+    "events": 2
+  },
+  {
+    "tactic": "Credential Access",
+    "file": "ppl_bypass_ppldump_knowdll_hijack_sysmon_security.evtx",
+    "events": 20
+  },
+  {
+    "tactic": "Credential Access",
+    "file": "remote_pwd_reset_rpc_mimikatz_postzerologon_target_DC.evtx",
+    "events": 7
+  },
+  {
+    "tactic": "Credential Access",
+    "file": "remote_sam_registry_access_via_backup_operator_priv.evtx",
+    "events": 31
+  },
+  {
+    "tactic": "Credential Access",
+    "file": "sysmon17_18_kekeo_tsssp_default_np.evtx",
+    "events": 3
+  },
+  {
+    "tactic": "Credential Access",
+    "file": "sysmon_10_11_lsass_memdump.evtx",
+    "events": 4
+  },
+  {
+    "tactic": "Credential Access",
+    "file": "sysmon_10_11_outlfank_dumpert_and_andrewspecial_memdump.evtx",
+    "events": 15
+  },
+  {
+    "tactic": "Credential Access",
+    "file": "sysmon_10_1_memdump_comsvcs_minidump.evtx",
+    "events": 6
+  },
+  {
+    "tactic": "Credential Access",
+    "file": "sysmon_10_lsass_mimikatz_sekurlsa_logonpasswords.evtx",
+    "events": 1
+  },
+  {
+    "tactic": "Credential Access",
+    "file": "sysmon_13_keylogger_directx.evtx",
+    "events": 6
+  },
+  {
+    "tactic": "Credential Access",
+    "file": "sysmon_2x10_lsass_with_different_pid_RtlCreateProcessReflection.evtx",
+    "events": 3
+  },
+  {
+    "tactic": "Credential Access",
+    "file": "sysmon_3_10_Invoke-Mimikatz_hosted_Github.evtx",
+    "events": 2
+  },
+  {
+    "tactic": "Credential Access",
+    "file": "sysmon_rdrleakdiag_lsass_dump.evtx",
+    "events": 4
+  },
+  {
+    "tactic": "Credential Access",
+    "file": "tutto_malseclogon.evtx",
+    "events": 15
+  },
+  {
+    "tactic": "Defense Evasion",
+    "file": "DE_104_system_log_cleared.evtx",
+    "events": 1
+  },
+  {
+    "tactic": "Defense Evasion",
+    "file": "DE_1102_security_log_cleared.evtx",
+    "events": 112
+  },
+  {
+    "tactic": "Defense Evasion",
+    "file": "DE_BYOV_Zam64_CA_Memdump_sysmon_7_10.evtx",
+    "events": 6
+  },
+  {
+    "tactic": "Defense Evasion",
+    "file": "DE_EventLog_Service_Crashed.evtx",
+    "events": 4
+  },
+  {
+    "tactic": "Defense Evasion",
+    "file": "DE_Fake_ComputerAccount_4720.evtx",
+    "events": 2
+  },
+  {
+    "tactic": "Defense Evasion",
+    "file": "DE_KernelDebug_and_TestSigning_ON_Security_4826.evtx",
+    "events": 6
+  },
+  {
+    "tactic": "Defense Evasion",
+    "file": "DE_Powershell_CLM_Disabled_Sysmon_12.evtx",
+    "events": 1
+  },
+  {
+    "tactic": "Defense Evasion",
+    "file": "DE_ProcessHerpaderping_Sysmon_11_10_1_7.evtx",
+    "events": 4
+  },
+  {
+    "tactic": "Defense Evasion",
+    "file": "DE_UAC_Disabled_Sysmon_12_13.evtx",
+    "events": 3
+  },
+  {
+    "tactic": "Defense Evasion",
+    "file": "DE_WinEventLogSvc_Crash_System_7036.evtx",
+    "events": 6
+  },
+  {
+    "tactic": "Defense Evasion",
+    "file": "DE_remote_eventlog_svc_crash_byt3bl33d3r_sysmon_17_1_3.evtx",
+    "events": 11
+  },
+  {
+    "tactic": "Defense Evasion",
+    "file": "DE_renamed_psexec_service_sysmon_17_18.evtx",
+    "events": 11
+  },
+  {
+    "tactic": "Defense Evasion",
+    "file": "DE_suspicious_remote_eventlog_svc_access_5145.evtx",
+    "events": 8
+  },
+  {
+    "tactic": "Defense Evasion",
+    "file": "DE_xp_cmdshell_enabled_MSSQL_EID_15457.evtx",
+    "events": 4
+  },
+  {
+    "tactic": "Defense Evasion",
+    "file": "DSE_bypass_BYOV_TDL_dummydriver_sysmon_6_7_13.evtx",
+    "events": 8
+  },
+  {
+    "tactic": "Defense Evasion",
+    "file": "Sysmon 7  Update Session Orchestrator Dll Hijack.evtx",
+    "events": 64
+  },
+  {
+    "tactic": "Defense Evasion",
+    "file": "Sysmon 7 dllhijack_cdpsshims_CDPSvc.evtx",
+    "events": 13
+  },
+  {
+    "tactic": "Defense Evasion",
+    "file": "Sysmon_10_Evasion_Suspicious_NtOpenProcess_CallTrace.evtx",
+    "events": 1
+  },
+  {
+    "tactic": "Defense Evasion",
+    "file": "Sysmon_12_DE_AntiForensics_MRU_DeleteKey.evtx",
+    "events": 3
+  },
+  {
+    "tactic": "Defense Evasion",
+    "file": "Win_4985_T1186_Process_Doppelganging.evtx",
+    "events": 2
+  },
+  {
+    "tactic": "Defense Evasion",
+    "file": "apt10_jjs_sideloading_prochollowing_persist_as_service_sysmon_1_7_8_13.evtx",
+    "events": 11
+  },
+  {
+    "tactic": "Defense Evasion",
+    "file": "de_PsScriptBlockLogging_disabled_sysmon12_13.evtx",
+    "events": 2
+  },
+  {
+    "tactic": "Defense Evasion",
+    "file": "de_hiding_files_via_attrib_cmdlet.evtx",
+    "events": 1
+  },
+  {
+    "tactic": "Defense Evasion",
+    "file": "de_portforward_netsh_rdp_sysmon_13_1.evtx",
+    "events": 3
+  },
+  {
+    "tactic": "Defense Evasion",
+    "file": "de_powershell_execpolicy_changed_sysmon_13.evtx",
+    "events": 5
+  },
+  {
+    "tactic": "Defense Evasion",
+    "file": "de_sysmon_13_VBA_Security_AccessVBOM.evtx",
+    "events": 1
+  },
+  {
+    "tactic": "Defense Evasion",
+    "file": "de_unmanagedpowershell_psinject_sysmon_7_8_10.evtx",
+    "events": 84
+  },
+  {
+    "tactic": "Defense Evasion",
+    "file": "evasion_codeinj_odzhan_conhost_sysmon_10_1.evtx",
+    "events": 4
+  },
+  {
+    "tactic": "Defense Evasion",
+    "file": "evasion_codeinj_odzhan_spoolsv_sysmon_10_1.evtx",
+    "events": 4
+  },
+  {
+    "tactic": "Defense Evasion",
+    "file": "faxhell_sysmon_7_1_18_3_bindshell_dllhijack.evtx",
+    "events": 10
+  },
+  {
+    "tactic": "Defense Evasion",
+    "file": "meterpreter_migrate_to_explorer_sysmon_8.evtx",
+    "events": 1
+  },
+  {
+    "tactic": "Defense Evasion",
+    "file": "process_suspend_sysmon_10_ga_800.evtx",
+    "events": 1
+  },
+  {
+    "tactic": "Defense Evasion",
+    "file": "sideloading_wwlib_sysmon_7_1_11.evtx",
+    "events": 7
+  },
+  {
+    "tactic": "Defense Evasion",
+    "file": "sysmon_10_1_ppid_spoofing.evtx",
+    "events": 5
+  },
+  {
+    "tactic": "Defense Evasion",
+    "file": "sysmon_13_rdp_settings_tampering.evtx",
+    "events": 20
+  },
+  {
+    "tactic": "Defense Evasion",
+    "file": "sysmon_2_11_evasion_timestomp_MACE.evtx",
+    "events": 2
+  },
+  {
+    "tactic": "Discovery",
+    "file": "4799_remote_local_groups_enumeration.evtx",
+    "events": 5
+  },
+  {
+    "tactic": "Discovery",
+    "file": "Discovery_Remote_System_NamedPipes_Sysmon_18.evtx",
+    "events": 20
+  },
+  {
+    "tactic": "Discovery",
+    "file": "dicovery_4661_net_group_domain_admins_target.evtx",
+    "events": 63
+  },
+  {
+    "tactic": "Discovery",
+    "file": "discovery_UEFI_Settings_rweverything_sysmon_6.evtx",
+    "events": 1
+  },
+  {
+    "tactic": "Discovery",
+    "file": "discovery_bloodhound.evtx",
+    "events": 10
+  },
+  {
+    "tactic": "Discovery",
+    "file": "discovery_enum_shares_target_sysmon_3_18.evtx",
+    "events": 4
+  },
+  {
+    "tactic": "Discovery",
+    "file": "discovery_local_user_or_group_windows_security_4799_4798.evtx",
+    "events": 3
+  },
+  {
+    "tactic": "Discovery",
+    "file": "discovery_meterpreter_ps_cmd_process_listing_sysmon_10.evtx",
+    "events": 52
+  },
+  {
+    "tactic": "Discovery",
+    "file": "discovery_psloggedon.evtx",
+    "events": 4
+  },
+  {
+    "tactic": "Discovery",
+    "file": "discovery_sysmon_18_Invoke_UserHunter_NetSessionEnum_DC-srvsvc.evtx",
+    "events": 1
+  },
+  {
+    "tactic": "Discovery",
+    "file": "discovery_sysmon_3_Invoke_UserHunter_SourceMachine.evtx",
+    "events": 9
+  },
+  {
+    "tactic": "Execution",
+    "file": "Exec_sysmon_meterpreter_reversetcp_msipackage.evtx",
+    "events": 8
+  },
+  {
+    "tactic": "Execution",
+    "file": "Exec_via_cpl_Application_Experience_EventID_17_ControlPanelApplet.evtx",
+    "events": 4
+  },
+  {
+    "tactic": "Execution",
+    "file": "Sysmon_Exec_CompiledHTML.evtx",
+    "events": 2
+  },
+  {
+    "tactic": "Execution",
+    "file": "Sysmon_meterpreter_ReflectivePEInjection_to_notepad_.evtx",
+    "events": 13
+  },
+  {
+    "tactic": "Execution",
+    "file": "evasion_execution_imageload_wuauclt_lolbas.evtx",
+    "events": 3
+  },
+  {
+    "tactic": "Execution",
+    "file": "exec_driveby_cve-2018-15982_sysmon_1_10.evtx",
+    "events": 2
+  },
+  {
+    "tactic": "Execution",
+    "file": "exec_msxsl_xsl_sysmon_1_7.evtx",
+    "events": 3
+  },
+  {
+    "tactic": "Execution",
+    "file": "exec_persist_rundll32_mshta_scheduledtask_sysmon_1_3_11.evtx",
+    "events": 8
+  },
+  {
+    "tactic": "Execution",
+    "file": "exec_sysmon_1_11_lolbin_rundll32_openurl_FileProtocolHandler.evtx",
+    "events": 11
+  },
+  {
+    "tactic": "Execution",
+    "file": "exec_sysmon_1_11_lolbin_rundll32_shdocvw_openurl.evtx",
+    "events": 6
+  },
+  {
+    "tactic": "Execution",
+    "file": "exec_sysmon_1_11_lolbin_rundll32_zipfldr_RouteTheCall.evtx",
+    "events": 2
+  },
+  {
+    "tactic": "Execution",
+    "file": "exec_sysmon_1_7_jscript9_defense_evasion.evtx",
+    "events": 3
+  },
+  {
+    "tactic": "Execution",
+    "file": "exec_sysmon_1_ftp.evtx",
+    "events": 4
+  },
+  {
+    "tactic": "Execution",
+    "file": "exec_sysmon_1_lolbin_pcalua.evtx",
+    "events": 3
+  },
+  {
+    "tactic": "Execution",
+    "file": "exec_sysmon_1_lolbin_renamed_regsvr32_scrobj.evtx",
+    "events": 2
+  },
+  {
+    "tactic": "Execution",
+    "file": "exec_sysmon_1_lolbin_rundll32_advpack_RegisterOCX.evtx",
+    "events": 2
+  },
+  {
+    "tactic": "Execution",
+    "file": "exec_sysmon_1_rundll32_pcwutl_LaunchApplication.evtx",
+    "events": 1
+  },
+  {
+    "tactic": "Execution",
+    "file": "exec_sysmon_lobin_regsvr32_sct.evtx",
+    "events": 3
+  },
+  {
+    "tactic": "Execution",
+    "file": "exec_wmic_xsl_internet_sysmon_3_1_11.evtx",
+    "events": 8
+  },
+  {
+    "tactic": "Execution",
+    "file": "execution_evasion_visual_studio_prebuild_event.evtx",
+    "events": 29
+  },
+  {
+    "tactic": "Execution",
+    "file": "revshell_cmd_svchost_sysmon_1.evtx",
+    "events": 4
+  },
+  {
+    "tactic": "Execution",
+    "file": "rogue_msi_url_1040_1042.evtx",
+    "events": 351
+  },
+  {
+    "tactic": "Execution",
+    "file": "susp_explorer_exec.evtx",
+    "events": 3
+  },
+  {
+    "tactic": "Execution",
+    "file": "susp_explorer_exec_root_cmdline_@rimpq_@CyberRaiju.evtx",
+    "events": 10
+  },
+  {
+    "tactic": "Execution",
+    "file": "sysmon_11_1_lolbas_downldr_desktopimgdownldr.evtx",
+    "events": 3
+  },
+  {
+    "tactic": "Execution",
+    "file": "sysmon_1_11_rundll32_cpl_ostap.evtx",
+    "events": 5
+  },
+  {
+    "tactic": "Execution",
+    "file": "sysmon_exec_from_vss_persistence.evtx",
+    "events": 17
+  },
+  {
+    "tactic": "Execution",
+    "file": "sysmon_lolbas_rundll32_zipfldr_routethecall_shell.evtx",
+    "events": 2
+  },
+  {
+    "tactic": "Execution",
+    "file": "sysmon_lolbin_bohops_vshadow_exec.evtx",
+    "events": 6
+  },
+  {
+    "tactic": "Execution",
+    "file": "sysmon_mshta_sharpshooter_stageless_meterpreter.evtx",
+    "events": 3
+  },
+  {
+    "tactic": "Execution",
+    "file": "sysmon_vbs_sharpshooter_stageless_meterpreter.evtx",
+    "events": 5
+  },
+  {
+    "tactic": "Execution",
+    "file": "sysmon_zipexec.evtx",
+    "events": 8
+  },
+  {
+    "tactic": "Execution",
+    "file": "temp_scheduled_task_4698_4699.evtx",
+    "events": 2
+  },
+  {
+    "tactic": "Execution",
+    "file": "windows_bits_4_59_60_lolbas desktopimgdownldr.evtx",
+    "events": 5
+  },
+  {
+    "tactic": "Lateral Movement",
+    "file": "DFIR_RDP_Client_TimeZone_RdpCoreTs_104_example.evtx",
+    "events": 21
+  },
+  {
+    "tactic": "Lateral Movement",
+    "file": "ImpersonateUser-via local Pass The Hash Sysmon and Security.evtx",
+    "events": 14
+  },
+  {
+    "tactic": "Lateral Movement",
+    "file": "LM_4624_mimikatz_sekurlsa_pth_source_machine.evtx",
+    "events": 6
+  },
+  {
+    "tactic": "Lateral Movement",
+    "file": "LM_5145_Remote_FileCopy.evtx",
+    "events": 869
+  },
+  {
+    "tactic": "Lateral Movement",
+    "file": "LM_DCOM_MSHTA_LethalHTA_Sysmon_3_1.evtx",
+    "events": 2
+  },
+  {
+    "tactic": "Lateral Movement",
+    "file": "LM_ImageLoad_NFSH_Sysmon_7.evtx",
+    "events": 2
+  },
+  {
+    "tactic": "Lateral Movement",
+    "file": "LM_NewShare_Added_Sysmon_12_13.evtx",
+    "events": 3
+  },
+  {
+    "tactic": "Lateral Movement",
+    "file": "LM_PowershellRemoting_sysmon_1_wsmprovhost.evtx",
+    "events": 1
+  },
+  {
+    "tactic": "Lateral Movement",
+    "file": "LM_REMCOM_5145_TargetHost.evtx",
+    "events": 30
+  },
+  {
+    "tactic": "Lateral Movement",
+    "file": "LM_Remote_Service01_5145_svcctl.evtx",
+    "events": 1
+  },
+  {
+    "tactic": "Lateral Movement",
+    "file": "LM_Remote_Service02_7045.evtx",
+    "events": 3
+  },
+  {
+    "tactic": "Lateral Movement",
+    "file": "LM_ScheduledTask_ATSVC_target_host.evtx",
+    "events": 34
+  },
+  {
+    "tactic": "Lateral Movement",
+    "file": "LM_WMIC_4648_rpcss.evtx",
+    "events": 5
+  },
+  {
+    "tactic": "Lateral Movement",
+    "file": "LM_WMI_4624_4688_TargetHost.evtx",
+    "events": 8
+  },
+  {
+    "tactic": "Lateral Movement",
+    "file": "LM_add_new_namedpipe_tp_nullsession_registry_turla_like_ttp.evtx",
+    "events": 1
+  },
+  {
+    "tactic": "Lateral Movement",
+    "file": "LM_dcom_shwnd_shbrwnd_mmc20_failed_traces_system_10016.evtx",
+    "events": 4
+  },
+  {
+    "tactic": "Lateral Movement",
+    "file": "LM_impacket_docmexec_mmc_sysmon_01.evtx",
+    "events": 9
+  },
+  {
+    "tactic": "Lateral Movement",
+    "file": "LM_regsvc_DirectoryServiceExtPt_Lsass_NTDS_AdamXpn.evtx",
+    "events": 6
+  },
+  {
+    "tactic": "Lateral Movement",
+    "file": "LM_renamed_psexecsvc_5145.evtx",
+    "events": 22
+  },
+  {
+    "tactic": "Lateral Movement",
+    "file": "LM_sysmon_1_12_13_3_tsclient_SharpRdp.evtx",
+    "events": 9
+  },
+  {
+    "tactic": "Lateral Movement",
+    "file": "LM_sysmon_3_12_13_1_SharpRDP.evtx",
+    "events": 38
+  },
+  {
+    "tactic": "Lateral Movement",
+    "file": "LM_sysmon_3_DCOM_ShellBrowserWindow_ShellWindows.evtx",
+    "events": 3
+  },
+  {
+    "tactic": "Lateral Movement",
+    "file": "LM_sysmon_psexec_smb_meterpreter.evtx",
+    "events": 10
+  },
+  {
+    "tactic": "Lateral Movement",
+    "file": "LM_sysmon_remote_task_src_powershell.evtx",
+    "events": 3
+  },
+  {
+    "tactic": "Lateral Movement",
+    "file": "LM_tsclient_startup_folder.evtx",
+    "events": 4
+  },
+  {
+    "tactic": "Lateral Movement",
+    "file": "LM_typical_IIS_webshell_sysmon_1_10_traces.evtx",
+    "events": 4
+  },
+  {
+    "tactic": "Lateral Movement",
+    "file": "LM_winrm_exec_sysmon_1_winrshost.evtx",
+    "events": 3
+  },
+  {
+    "tactic": "Lateral Movement",
+    "file": "LM_winrm_target_wrmlogs_91_wsmanShellStarted_poorLog.evtx",
+    "events": 1
+  },
+  {
+    "tactic": "Lateral Movement",
+    "file": "LM_wmi_PoisonHandler_Mr-Un1k0d3r_sysmon_1_13.evtx",
+    "events": 15
+  },
+  {
+    "tactic": "Lateral Movement",
+    "file": "LM_wmiexec_impacket_sysmon_whoami.evtx",
+    "events": 7
+  },
+  {
+    "tactic": "Lateral Movement",
+    "file": "LM_xp_cmdshell_MSSQL_Events.evtx",
+    "events": 21
+  },
+  {
+    "tactic": "Lateral Movement",
+    "file": "MSSQL_15281_xp_cmdshell_exec_failed_attempt.evtx",
+    "events": 1
+  },
+  {
+    "tactic": "Lateral Movement",
+    "file": "RemotePowerShell_MS_Windows-Remote_Management_EventID_169.evtx",
+    "events": 6
+  },
+  {
+    "tactic": "Lateral Movement",
+    "file": "dfir_rdpsharp_target_RdpCoreTs_168_68_131.evtx",
+    "events": 40
+  },
+  {
+    "tactic": "Lateral Movement",
+    "file": "lateral_movement_startup_3_11.evtx",
+    "events": 2
+  },
+  {
+    "tactic": "Lateral Movement",
+    "file": "lm_remote_registry_sysmon_1_13_3.evtx",
+    "events": 4
+  },
+  {
+    "tactic": "Lateral Movement",
+    "file": "lm_sysmon_18_remshell_over_namedpipe.evtx",
+    "events": 7
+  },
+  {
+    "tactic": "Lateral Movement",
+    "file": "net_share_drive_5142.evtx",
+    "events": 2
+  },
+  {
+    "tactic": "Lateral Movement",
+    "file": "powercat_revShell_sysmon_1_3.evtx",
+    "events": 9
+  },
+  {
+    "tactic": "Lateral Movement",
+    "file": "remote task update 4624 4702 same logonid.evtx",
+    "events": 8
+  },
+  {
+    "tactic": "Lateral Movement",
+    "file": "remote_file_copy_system_proc_file_write_sysmon_11.evtx",
+    "events": 2
+  },
+  {
+    "tactic": "Lateral Movement",
+    "file": "sharprdp_sysmon_7_mstscax.dll.evtx",
+    "events": 4
+  },
+  {
+    "tactic": "Lateral Movement",
+    "file": "smb_bi_auth_conn_spoolsample.evtx",
+    "events": 2
+  },
+  {
+    "tactic": "Lateral Movement",
+    "file": "smbmap_upload_exec_sysmon.evtx",
+    "events": 27
+  },
+  {
+    "tactic": "Lateral Movement",
+    "file": "spoolsample_5145.evtx",
+    "events": 1
+  },
+  {
+    "tactic": "Lateral Movement",
+    "file": "sysmon_1_exec_via_sql_xpcmdshell.evtx",
+    "events": 1
+  },
+  {
+    "tactic": "Lateral Movement",
+    "file": "wmi_remote_registry_sysmon.evtx",
+    "events": 13
+  },
+  {
+    "tactic": "Other",
+    "file": "exec_emotet_ps_4104.evtx",
+    "events": 1
+  },
+  {
+    "tactic": "Other",
+    "file": "exec_emotet_ps_800_get-item.evtx",
+    "events": 1
+  },
+  {
+    "tactic": "Other",
+    "file": "exec_emotet_ps_800_invoke-item.evtx",
+    "events": 1
+  },
+  {
+    "tactic": "Other",
+    "file": "exec_emotet_ps_800_new-item.evtx",
+    "events": 1
+  },
+  {
+    "tactic": "Other",
+    "file": "exec_emotet_ps_800_new-object.evtx",
+    "events": 1
+  },
+  {
+    "tactic": "Other",
+    "file": "exec_emotet_sysmon_1.evtx",
+    "events": 1
+  },
+  {
+    "tactic": "Other",
+    "file": "maldoc_mshta_via_shellbrowserwind_rundll32.evtx",
+    "events": 11
+  },
+  {
+    "tactic": "Other",
+    "file": "rdpcorets_148_mst120_bluekeep_rpdscan_full.evtx",
+    "events": 733
+  },
+  {
+    "tactic": "Persistence",
+    "file": "DACL_DCSync_Right_Powerview_ Add-DomainObjectAcl.evtx",
+    "events": 28
+  },
+  {
+    "tactic": "Persistence",
+    "file": "Network_Service_Guest_added_to_admins_4732.evtx",
+    "events": 2
+  },
+  {
+    "tactic": "Persistence",
+    "file": "Persistence_Shime_Microsoft-Windows-Application-Experience_Program-Telemetry_500.evtx",
+    "events": 7
+  },
+  {
+    "tactic": "Persistence",
+    "file": "Persistence_Winsock_Catalog Change EventId_1.evtx",
+    "events": 2
+  },
+  {
+    "tactic": "Persistence",
+    "file": "evasion_persis_hidden_run_keyvalue_sysmon_13.evtx",
+    "events": 1
+  },
+  {
+    "tactic": "Persistence",
+    "file": "persist_bitsadmin_Microsoft-Windows-Bits-Client-Operational.evtx",
+    "events": 6
+  },
+  {
+    "tactic": "Persistence",
+    "file": "persist_firefox_comhijack_sysmon_11_13_7_1.evtx",
+    "events": 19
+  },
+  {
+    "tactic": "Persistence",
+    "file": "persist_turla_outlook_backdoor_comhijack.evtx",
+    "events": 3
+  },
+  {
+    "tactic": "Persistence",
+    "file": "persist_valid_account_guest_rid_hijack.evtx",
+    "events": 4
+  },
+  {
+    "tactic": "Persistence",
+    "file": "persistence_SilentProcessExit_ImageHijack_sysmon_13_1.evtx",
+    "events": 13
+  },
+  {
+    "tactic": "Persistence",
+    "file": "persistence_accessibility_features_osk_sysmon1.evtx",
+    "events": 3
+  },
+  {
+    "tactic": "Persistence",
+    "file": "persistence_hidden_local_account_sysmon.evtx",
+    "events": 1
+  },
+  {
+    "tactic": "Persistence",
+    "file": "persistence_pendingGPO_sysmon_13.evtx",
+    "events": 4
+  },
+  {
+    "tactic": "Persistence",
+    "file": "persistence_security_dcshadow_4742.evtx",
+    "events": 10
+  },
+  {
+    "tactic": "Persistence",
+    "file": "persistence_startup_UserShellStartup_Folder_Changed_sysmon_13.evtx",
+    "events": 1
+  },
+  {
+    "tactic": "Persistence",
+    "file": "persistence_sysmon_11_13_1_shime_appfix.evtx",
+    "events": 237
+  },
+  {
+    "tactic": "Persistence",
+    "file": "sysmon_13_1_persistence_via_winlogon_shell.evtx",
+    "events": 25
+  },
+  {
+    "tactic": "Persistence",
+    "file": "sysmon_1_persist_bitsjob_SetNotifyCmdLine.evtx",
+    "events": 6
+  },
+  {
+    "tactic": "Persistence",
+    "file": "sysmon_1_smss_child_proc_bootexecute_setupexecute.evtx",
+    "events": 1
+  },
+  {
+    "tactic": "Persistence",
+    "file": "sysmon_20_21_1_CommandLineEventConsumer.evtx",
+    "events": 17
+  },
+  {
+    "tactic": "Persistence",
+    "file": "sysmon_local_account_creation_and_added_admingroup_12_13.evtx",
+    "events": 17
+  },
+  {
+    "tactic": "Persistence",
+    "file": "wmighost_sysmon_20_21_1.evtx",
+    "events": 4
+  },
+  {
+    "tactic": "Privilege Escalation",
+    "file": "4624 LT3 AnonymousLogon Localhost - JuicyPotato.evtx",
+    "events": 3
+  },
+  {
+    "tactic": "Privilege Escalation",
+    "file": "4765_sidhistory_add_t1178.evtx",
+    "events": 3
+  },
+  {
+    "tactic": "Privilege Escalation",
+    "file": "CVE-2020-0796_SMBV3Ghost_LocalPrivEsc_Sysmon_3_1_10.evtx",
+    "events": 4
+  },
+  {
+    "tactic": "Privilege Escalation",
+    "file": "EfsPotato_sysmon_17_18_privesc_seimpersonate_to_system.evtx",
+    "events": 20
+  },
+  {
+    "tactic": "Privilege Escalation",
+    "file": "Invoke_TokenDuplication_UAC_Bypass4624.evtx",
+    "events": 1
+  },
+  {
+    "tactic": "Privilege Escalation",
+    "file": "NTLM2SelfRelay-med0x2e-security_4624_4688.evtx",
+    "events": 11
+  },
+  {
+    "tactic": "Privilege Escalation",
+    "file": "PrivEsc_CVE-2020-1313_Sysmon_13_UScheduler_Cmdline.evtx",
+    "events": 4
+  },
+  {
+    "tactic": "Privilege Escalation",
+    "file": "PrivEsc_Imperson_NetSvc_to_Sys_Decoder_Sysmon_1_17_18.evtx",
+    "events": 13
+  },
+  {
+    "tactic": "Privilege Escalation",
+    "file": "PrivEsc_NetSvc_SessionToken_Retrival_via_localSMB_Auth_5145.evtx",
+    "events": 1
+  },
+  {
+    "tactic": "Privilege Escalation",
+    "file": "PrivEsc_SeImpersonatePriv_enabled_back_for_upnp_localsvc_4698.evtx",
+    "events": 2
+  },
+  {
+    "tactic": "Privilege Escalation",
+    "file": "RogueWinRM.evtx",
+    "events": 7
+  },
+  {
+    "tactic": "Privilege Escalation",
+    "file": "Runas_4624_4648_Webshell_CreateProcessAsUserA.evtx",
+    "events": 3
+  },
+  {
+    "tactic": "Privilege Escalation",
+    "file": "Sysmon_13_1_UACBypass_SDCLTBypass.evtx",
+    "events": 5
+  },
+  {
+    "tactic": "Privilege Escalation",
+    "file": "Sysmon_13_1_UAC_Bypass_EventVwrBypass.evtx",
+    "events": 6
+  },
+  {
+    "tactic": "Privilege Escalation",
+    "file": "Sysmon_UACME_22.evtx",
+    "events": 19
+  },
+  {
+    "tactic": "Privilege Escalation",
+    "file": "Sysmon_UACME_23.evtx",
+    "events": 8
+  },
+  {
+    "tactic": "Privilege Escalation",
+    "file": "Sysmon_UACME_30.evtx",
+    "events": 11
+  },
+  {
+    "tactic": "Privilege Escalation",
+    "file": "Sysmon_UACME_32.evtx",
+    "events": 8
+  },
+  {
+    "tactic": "Privilege Escalation",
+    "file": "Sysmon_UACME_33.evtx",
+    "events": 9
+  },
+  {
+    "tactic": "Privilege Escalation",
+    "file": "Sysmon_UACME_34.evtx",
+    "events": 6
+  },
+  {
+    "tactic": "Privilege Escalation",
+    "file": "Sysmon_UACME_36_FileCreate.evtx",
+    "events": 13
+  },
+  {
+    "tactic": "Privilege Escalation",
+    "file": "Sysmon_UACME_37_FileCreate.evtx",
+    "events": 7
+  },
+  {
+    "tactic": "Privilege Escalation",
+    "file": "Sysmon_UACME_38.evtx",
+    "events": 8
+  },
+  {
+    "tactic": "Privilege Escalation",
+    "file": "Sysmon_UACME_39.evtx",
+    "events": 7
+  },
+  {
+    "tactic": "Privilege Escalation",
+    "file": "Sysmon_UACME_41.evtx",
+    "events": 4
+  },
+  {
+    "tactic": "Privilege Escalation",
+    "file": "Sysmon_UACME_43.evtx",
+    "events": 5
+  },
+  {
+    "tactic": "Privilege Escalation",
+    "file": "Sysmon_UACME_45.evtx",
+    "events": 8
+  },
+  {
+    "tactic": "Privilege Escalation",
+    "file": "Sysmon_UACME_53.evtx",
+    "events": 14
+  },
+  {
+    "tactic": "Privilege Escalation",
+    "file": "Sysmon_UACME_54.evtx",
+    "events": 10
+  },
+  {
+    "tactic": "Privilege Escalation",
+    "file": "Sysmon_UACME_56.evtx",
+    "events": 15
+  },
+  {
+    "tactic": "Privilege Escalation",
+    "file": "Sysmon_UACME_63.evtx",
+    "events": 3
+  },
+  {
+    "tactic": "Privilege Escalation",
+    "file": "Sysmon_UACME_64.evtx",
+    "events": 530
+  },
+  {
+    "tactic": "Privilege Escalation",
+    "file": "Sysmon_uacme_58.evtx",
+    "events": 6
+  },
+  {
+    "tactic": "Privilege Escalation",
+    "file": "System_7045_namedpipe_privesc.evtx",
+    "events": 1
+  },
+  {
+    "tactic": "Privilege Escalation",
+    "file": "UACME_59_Sysmon.evtx",
+    "events": 7
+  },
+  {
+    "tactic": "Privilege Escalation",
+    "file": "UACME_61_Changepk.evtx",
+    "events": 2
+  },
+  {
+    "tactic": "Privilege Escalation",
+    "file": "eop_appcontainer_il_broker_filewrite.evtx",
+    "events": 3
+  },
+  {
+    "tactic": "Privilege Escalation",
+    "file": "privesc_KrbRelayUp_windows_4624.evtx",
+    "events": 1
+  },
+  {
+    "tactic": "Privilege Escalation",
+    "file": "privesc_registry_symlink_CVE-2020-1377.evtx",
+    "events": 30
+  },
+  {
+    "tactic": "Privilege Escalation",
+    "file": "privesc_roguepotato_sysmon_17_18.evtx",
+    "events": 6
+  },
+  {
+    "tactic": "Privilege Escalation",
+    "file": "privesc_rotten_potato_from_webshell_metasploit_sysmon_1_8_3.evtx",
+    "events": 13
+  },
+  {
+    "tactic": "Privilege Escalation",
+    "file": "privesc_seimpersonate_tosys_spoolsv_sysmon_17_18.evtx",
+    "events": 7
+  },
+  {
+    "tactic": "Privilege Escalation",
+    "file": "privesc_spoolfool_mahdihtm_sysmon_1_11_7_13.evtx",
+    "events": 4
+  },
+  {
+    "tactic": "Privilege Escalation",
+    "file": "privesc_spoolsv_spl_file_write_sysmon11.evtx",
+    "events": 37
+  },
+  {
+    "tactic": "Privilege Escalation",
+    "file": "privesc_sysmon_cve_20201030_spooler.evtx",
+    "events": 8
+  },
+  {
+    "tactic": "Privilege Escalation",
+    "file": "privesc_unquoted_svc_sysmon_1_11.evtx",
+    "events": 87
+  },
+  {
+    "tactic": "Privilege Escalation",
+    "file": "privexchange_dirkjan.evtx",
+    "events": 8
+  },
+  {
+    "tactic": "Privilege Escalation",
+    "file": "samaccount_spoofing_CVE-2021-42287_CVE-2021-42278_DC_securitylogs.evtx",
+    "events": 18
+  },
+  {
+    "tactic": "Privilege Escalation",
+    "file": "security_4624_4673_token_manip.evtx",
+    "events": 14
+  },
+  {
+    "tactic": "Privilege Escalation",
+    "file": "sysmon_11_1_15_WScriptBypassUAC.evtx",
+    "events": 15
+  },
+  {
+    "tactic": "Privilege Escalation",
+    "file": "sysmon_11_1_7_uacbypass_cliconfg.evtx",
+    "events": 8
+  },
+  {
+    "tactic": "Privilege Escalation",
+    "file": "sysmon_11_7_1_uacbypass_windirectory_mocking.evtx",
+    "events": 10
+  },
+  {
+    "tactic": "Privilege Escalation",
+    "file": "sysmon_13_1_12_11_perfmonUACBypass.evtx",
+    "events": 5
+  },
+  {
+    "tactic": "Privilege Escalation",
+    "file": "sysmon_13_1_compmgmtlauncherUACBypass.evtx",
+    "events": 4
+  },
+  {
+    "tactic": "Privilege Escalation",
+    "file": "sysmon_13_1_meterpreter_getsystem_NamedPipeImpersonation.evtx",
+    "events": 4
+  },
+  {
+    "tactic": "Privilege Escalation",
+    "file": "sysmon_1_11_exec_as_system_via_schedtask.evtx",
+    "events": 6
+  },
+  {
+    "tactic": "Privilege Escalation",
+    "file": "sysmon_1_13_11_cmstp_ini_uacbypass.evtx",
+    "events": 5
+  },
+  {
+    "tactic": "Privilege Escalation",
+    "file": "sysmon_1_13_UACBypass_AppPath_Control.evtx",
+    "events": 3
+  },
+  {
+    "tactic": "Privilege Escalation",
+    "file": "sysmon_1_7_11_mcx2prov_uacbypass.evtx",
+    "events": 9
+  },
+  {
+    "tactic": "Privilege Escalation",
+    "file": "sysmon_1_7_11_migwiz.evtx",
+    "events": 7
+  },
+  {
+    "tactic": "Privilege Escalation",
+    "file": "sysmon_1_7_11_sysprep_uacbypass.evtx",
+    "events": 7
+  },
+  {
+    "tactic": "Privilege Escalation",
+    "file": "sysmon_1_7_elevate_uacbypass_sysprep.evtx",
+    "events": 15
+  },
+  {
+    "tactic": "Privilege Escalation",
+    "file": "sysmon_privesc_from_admin_to_system_handle_inheritance.evtx",
+    "events": 3
+  },
+  {
+    "tactic": "Privilege Escalation",
+    "file": "sysmon_privesc_psexec_dwell.evtx",
+    "events": 12
+  },
+  {
+    "tactic": "Privilege Escalation",
+    "file": "sysmon_uacbypass_CDSSync_schtask_hijack_byeintegrity5.evtx",
+    "events": 8
+  },
+  {
+    "tactic": "Privilege Escalation",
+    "file": "win10_4703_SeDebugPrivilege_enabled.evtx",
+    "events": 1
+  },
+  {
+    "tactic": "UACME_59_Sysmon.evtx",
+    "file": "UACME_59_Sysmon.evtx",
+    "events": 7
+  }
+]

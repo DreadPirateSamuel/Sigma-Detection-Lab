@@ -1,0 +1,5 @@
+# Tested conversion/runtime versions are below. Use Python 3.12.
+sigma-cli==3.1.0
+pySigma==1.5.1
+pySigma-backend-elasticsearch==2.1.1
+PyYAML==6.0.3

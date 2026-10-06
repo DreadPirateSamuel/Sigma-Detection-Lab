@@ -1,0 +1,38 @@
+title: Run Key Value Referencing a Script Host or User Writable Location
+id: 25e21577-957a-49f1-86d6-51d1c0f0fabd
+status: experimental
+description: Detects Run or RunOnce value writes whose data references selected script hosts, execution utilities, or AppData and Temp paths. These features require investigation and may be legitimate.
+references:
+  - https://attack.mitre.org/techniques/T1547/001/
+author: Samuel Yoder
+date: 2026-10-05
+tags:
+  - attack.persistence
+  - attack.privilege-escalation
+  - attack.t1547.001
+logsource:
+  product: windows
+  category: registry_set
+detection:
+  selection_path:
+    EventID: 13
+    TargetObject|contains:
+      - '\Software\Microsoft\Windows\CurrentVersion\Run\'
+      - '\Software\Microsoft\Windows\CurrentVersion\RunOnce\'
+  selection_data:
+    Details|contains:
+      - 'powershell'
+      - 'pwsh'
+      - 'cmd.exe'
+      - 'wscript'
+      - 'cscript'
+      - 'mshta'
+      - 'rundll32'
+      - '\AppData\'
+      - '\Temp\'
+      - '%APPDATA%'
+      - '%TEMP%'
+  condition: selection_path and selection_data
+falsepositives:
+  - Legitimate per-user applications and logon scripts installed under AppData
+level: medium

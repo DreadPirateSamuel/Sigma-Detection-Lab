@@ -1,0 +1,112 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "wildcard": {
+          "winlog.channel": {
+            "value": "Microsoft-Windows-Sysmon/Operational",
+            "case_insensitive": true
+          }
+        }
+      },
+      {
+        "bool": {
+          "filter": [
+            {
+              "bool": {
+                "filter": [
+                  {
+                    "wildcard": {
+                      "event.code": {
+                        "value": "1",
+                        "case_insensitive": true
+                      }
+                    }
+                  },
+                  {
+                    "bool": {
+                      "should": [
+                        {
+                          "wildcard": {
+                            "process.executable": {
+                              "value": "*\\\\powershell.exe",
+                              "case_insensitive": true
+                            }
+                          }
+                        },
+                        {
+                          "wildcard": {
+                            "process.executable": {
+                              "value": "*\\\\pwsh.exe",
+                              "case_insensitive": true
+                            }
+                          }
+                        }
+                      ],
+                      "minimum_should_match": 1
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "bool": {
+                "should": [
+                  {
+                    "wildcard": {
+                      "process.command_line": {
+                        "value": "* -e *",
+                        "case_insensitive": true
+                      }
+                    }
+                  },
+                  {
+                    "wildcard": {
+                      "process.command_line": {
+                        "value": "* -ec *",
+                        "case_insensitive": true
+                      }
+                    }
+                  },
+                  {
+                    "wildcard": {
+                      "process.command_line": {
+                        "value": "* -en *",
+                        "case_insensitive": true
+                      }
+                    }
+                  },
+                  {
+                    "wildcard": {
+                      "process.command_line": {
+                        "value": "* -enc *",
+                        "case_insensitive": true
+                      }
+                    }
+                  },
+                  {
+                    "wildcard": {
+                      "process.command_line": {
+                        "value": "* -enco *",
+                        "case_insensitive": true
+                      }
+                    }
+                  },
+                  {
+                    "wildcard": {
+                      "process.command_line": {
+                        "value": "* -encodedcommand *",
+                        "case_insensitive": true
+                      }
+                    }
+                  }
+                ],
+                "minimum_should_match": 1
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,1 @@
+any where (winlog.channel:"Security" and event.code:"1102") or (winlog.channel:"System" and event.code:"104")

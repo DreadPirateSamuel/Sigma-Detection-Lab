@@ -1,0 +1,67 @@
+# Opportunity denominators describe available recorded signals, not all files for an ATT&CK technique. Technique ground-truth review is a later step.
+lsass_selected_read_access:
+  label: LSASS selected read masks
+  scope:
+    selection: {EventID: 10}
+    condition: selection
+  opportunity:
+    selection:
+      EventID: 10
+      TargetImage|endswith: '\lsass.exe'
+    condition: selection
+  required_fields: [TargetImage, GrantedAccess]
+powershell_encoded_command:
+  label: Encoded PowerShell
+  scope:
+    selection: {EventID: 1}
+    condition: selection
+  opportunity:
+    selection:
+      EventID: 1
+      Image|endswith: ['\powershell.exe', '\pwsh.exe']
+    condition: selection
+  required_fields: [Image, CommandLine]
+schtasks_create_task:
+  label: Schtasks create
+  scope:
+    selection: {EventID: 1}
+    condition: selection
+  opportunity:
+    selection:
+      EventID: 1
+      Image|endswith: '\schtasks.exe'
+    condition: selection
+  required_fields: [Image, CommandLine]
+run_key_suspicious_value:
+  label: Run key suspicious data
+  scope:
+    selection: {EventID: 13}
+    condition: selection
+  opportunity:
+    selection:
+      EventID: 13
+      TargetObject|contains:
+        - '\Software\Microsoft\Windows\CurrentVersion\Run\'
+        - '\Software\Microsoft\Windows\CurrentVersion\RunOnce\'
+    condition: selection
+  required_fields: [TargetObject, Details]
+wmi_consumer_filter_binding:
+  label: WMI consumer binding
+  scope:
+    selection: {EventID: 21}
+    condition: selection
+  opportunity:
+    selection: {EventID: 21}
+    condition: selection
+  required_fields: [EventID]
+windows_event_log_cleared:
+  label: Windows log clearing
+  scope:
+    selection_security: {Channel: Security, EventID: 1102}
+    selection_system: {Channel: System, EventID: 104}
+    condition: selection_security or selection_system
+  opportunity:
+    selection_security: {Channel: Security, EventID: 1102}
+    selection_system: {Channel: System, EventID: 104}
+    condition: selection_security or selection_system
+  required_fields: [Channel, EventID]

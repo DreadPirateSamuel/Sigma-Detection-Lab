@@ -1,0 +1,1 @@
+any where winlog.channel:"Microsoft-Windows-Sysmon/Operational" and ((event.code:"1" and process.executable:"*\\schtasks.exe") and process.command_line:"* /create *" and (process.command_line like~ ("* /tr *", "* /xml *")))
